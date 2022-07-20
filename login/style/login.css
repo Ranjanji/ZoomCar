@@ -66,3 +66,10 @@
 .continue>button:hover{
       background-color:#10a310
 }
+.arrow>p>i{
+    border: 1px solid black
+
+}
+.arrow>p>i>a{
+    background-color:red
+}
