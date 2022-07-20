@@ -1,0 +1,21 @@
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48,
+}
+
+.avatar{
+    border-radius: 50px;
+}
+
+.user-basic-info{
+    text-align: center;
+}
+
+#sidebar{
+    width: 312px;
+    height: 747px;
+}
+
