@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loginuser">
+       
+        <div class="mobile">
+          <img src="./india.png" alt="" />
+          <div class="countryCode">
+            <!-- <img src="./india.png" alt="" /> -->
+            <p>+91</p>
+          </div>
+          <div class="mobileNumber">
+            <input
+              type="number"
+              placeholder="Enter Mobile Number"
+              id="mobileNumber"
+            />
+          </div>
+        </div>
+      
+        <div class="passwordID">
+          <div class="password">
+            <input type="password" placeholder="Enter password" id="password" />
+          </div>
+        </div>
+        <div class="button">
+            <div class="continue">
+              <button onClick="login()">continue</button>
+            </div>
+          </div>
+        
+        </div>
+     
+      </div>
+</body>
+</html>
+<script>
+
+//  console.log(userArr)
+
+ let login=()=>{
+    let number = document.getElementById("mobileNumber").value
+    let password = document.getElementById("password").value
+   
+    if(number.length!=10){
+      return alert("Please enter a valid Number")
+    }
+  
+  
+    if(validateLogin(number,password)){
+
+    alert("login successful!")
+  }else{
+    alert("login failed!")
+  }
+
+ }
+
+
+ function validateLogin(number,password){
+    let userArr = JSON.parse(localStorage.getItem("userArr"))
+    console.log(userArr)
+
+    let filtered = userArr.filter(function(ele){
+        return ele.number == number && ele.password == password
+    })
+    if(filtered.length>0){
+        localStorage.setItem("currUser",JSON.stringify(filtered))
+        return true
+    }else{
+        return false
+    }
+ }
+</script>
