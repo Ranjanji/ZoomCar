@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coupon</title>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.navbar{
+
+    padding: 15px 30px;
+    gap: 20px;
+   
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+h2{
+    font-weight: 500;
+}
+.navbar>a>img{
+    width: 20px;
+}
+.border{
+ padding: 5px 0px;
+}
+
+form{
+    padding: 20px 0px;
+    width: 600px;
+    margin: auto;
+    /* border: 1px solid; */
+
+}
+.border{
+    background-color: rgb(232,232,232);
+}
+h4{
+    color: rgb(128,128,128);
+    width: 600px;
+    margin: auto;
+    /* border: 1px solid; */
+}
+#code{
+    border: none;
+    border-bottom: 2px solid #10a310;
+    font-size: 16px;
+    padding: 9px;
+    position: relative;
+    left: 30%;
+   
+}
+#code:focus{
+ outline: none;
+}
+
+button{
+    margin-left: auto;
+    border: 1px solid #ccc;
+    background: white;
+    color: grey;
+    padding: 9px;
+    font-weight: bold;
+    flex: 1;
+    border-radius: 2px;
+    transition: 0.2s ease-in;
+    outline: none;
+    margin-left: 4px;
+    position: relative;
+    left: 30%;
+}
+/* input:hover button{
+    color: white;
+    border: 1px solid #76b94e;
+    background: #76b94e;
+} */
+.standard{
+    display: flex;
+    
+    gap: 20px;
+    width: 600px;
+    margin: auto;
+}
+#context{
+    display: flex;
+    justify-content: space-between;
+}
+#context>div{
+  font-weight: bold;
+  font-size: 14px;
+}
+#context>a{
+    text-decoration: none;
+    color: #10a310;
+}
+#box{
+    border: 1px dashed;
+    display: flex;
+    align-items: center;
+    width: 90px;
+    justify-content: center;
+    padding: 3px 5px;
+    margin-top: 20px;
+}
+.sub{
+    color: grey;
+    font-size: 12px;
+    padding: 5px 0;
+}
+.input1{
+    position: relative;
+    top: -12px;
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+    <a href="checkout page1.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VpEv_6Ei9xQ8pQ1TEg5TS5_sMFWYjmP-vrDOC1M3386sPWRHdrt5twPP3y3zSFMZqaM&usqp=CAU" alt="" id="arrow"></a>
+        <h2>Promotional Offers</h2>
+    </div> 
+    <div class="border"><h4>Have a coupon code ?</h4></div>
+    <form action="">
+        <input type="text" id="code" placeholder="Enter Promo Code ">
+        <button>APPLY</button>
+    </form>
+    <div class="border"><h4>Or choose an offer from below.</h4></div>
+
+    <div class="standard">
+        <input type="radio" class="input1" value="378">
+         <div>
+
+            <div id="box">almonsoon</div>
+            <div class="sub">Get exciting vouchers from our partners - AJIO, Myntra, Medibuddy, CoinDCX, Cleartax, and EduBridge.</div>   
+         
+            <div id="context">
+                <div>Valid till 30th Sep 2022</div>
+                <a href="">T&C apply ></a>
+            </div>
+        </div>
+    </div>  
+    </div>
+</body>
+</html>
+<script src="./script/coupon.js">
+ 
+</script>
