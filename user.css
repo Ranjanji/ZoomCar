@@ -6,16 +6,90 @@
     'opsz' 48,
 }
 
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+
 .avatar{
     border-radius: 50px;
 }
 
 .user-basic-info{
     text-align: center;
+    margin-top: 15px;
+    padding-bottom: 5px;
+
 }
 
 #sidebar{
-    width: 312px;
+    width: 25%;
     height: 747px;
+    border: 1px solid red;
+    display: inline-block;
 }
 
+#user-container{
+    width: 70%;
+    height: 747px;
+    border: 1px solid green;
+}
+
+.material-icons{
+    font-size: 20px;
+    color: #10a315;
+
+}
+
+li{
+    list-style: none;
+}
+
+#sidebar>div{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-status{
+    display: flex;
+    flex-direction: column;
+}
+
+#zpoints{
+    color: inherit;
+    width: 26px;
+    height: 24px;
+}
+
+.balance-amount-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.install-app{
+    color: #a35c00;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.credit-text{
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.user-status ul{
+    width: 268px;
+    height: 120px;
+    line-height: 1px;
+    margin-top: 1px;
+}
+
+#paytm{
+    color: inherit;
+    width: 26px;
+    height: 24px;
+}
