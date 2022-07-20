@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/signup.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="register">
+      <div class="img">
+        <img
+          src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg"
+          alt=""
+        />
+      </div>
+      <div class="header">
+        <h3>Enter details to login/sign-up</h3>
+      </div>
+      <div class="mobile">
+        <img src="./india.png" alt="" />
+        <div class="countryCode">
+          <!-- <img src="./india.png" alt="" /> -->
+          <p>+91</p>
+        </div>
+        <div class="mobileNumber">
+          <input
+            type="number"
+            placeholder="Enter Mobile Number"
+            id="mobileNumber"
+          />
+        </div>
+      </div>
+      <div class="userName">
+        <div class="name">
+          <input type="text" placeholder="Enter your name" id="name" />
+        </div>
+      </div>
+      <div class="emailID">
+        <div class="email">
+          <input type="email" placeholder="Enter Email" id="email" />
+        </div>
+      </div>
+      <div class="passwordID">
+        <div class="password">
+          <input type="password" placeholder="Enter password" id="password" />
+        </div>
+      </div>
+      <div class="socialMedia">
+        <div class="social">
+          <p id="socialMedia">
+            continue to social <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-google"></i>
+          </p>
+        </div>
+      </div>
+      <div class="button">
+        <div class="continue">
+          <button onClick="singup()">continue</button>
+          <p>Already have account <a href="../login/login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let singup = () => {
+    let number = document.getElementById("mobileNumber").value;
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    console.log(name, email, number);
+    let obj = {
+      name: name,
+      number: number,
+      email: email,
+      password: password,
+    };
+    console.log(obj);
+    let userArr = JSON.parse(localStorage.getItem("userArr")) || [];
+    if (number.length != 10) {
+      return alert("Please enter a valid number");
+    }
+    if (name.length == 0) {
+      return alert("Please enter a name");
+    }
+    if (email.length == 0) {
+      return alert("Please enter a email");
+    }
+    if (password.length == 0) {
+      alert("Please enter a password");
+    }
+
+    if (checkEmail(email)) {
+      userArr.push(obj);
+      localStorage.setItem("userArr", JSON.stringify(userArr));
+      alert("singup success!");
+      window.location.href = "../login/login.html";
+    } else {
+      alert("already have account please login");
+    }
+  };
+
+  function checkEmail(email) {
+    let userArr = JSON.parse(localStorage.getItem("userArr")) || [];
+
+    let filtered = userArr.filter(function (ele) {
+      return ele.email === email;
+    });
+
+    if (filtered.length > 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+</script>
