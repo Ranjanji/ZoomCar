@@ -1,5 +1,10 @@
 let data=[
     {
+        image:"https://zoomcar-assets.zoomcar.com/photos/original/ffa01311aba57692bd5cbf4de83ea12bd9176985.jpg?1656062154",
+        head1:"A car for every need",
+        head2:"SUVs, Sedans, Hatchback, Luxury cars - we got it all!"
+    },
+    {
         id:1,
         name:"Maruti Baleno",
         image:"https://zoomcar-assets.zoomcar.com/photographs/original/d748d92c90c3b84a32f4115da1e5bd3f3f352937.jpg?1615958311",
@@ -73,6 +78,11 @@ let data=[
         fuel:"Petrol",
         num:25,
         drive:"26k",
+    },
+    {
+        image:"",
+        head1:"",
+        head2:""
     },
     {
         id:6,
@@ -150,6 +160,11 @@ let data=[
         drive:"19k",
     },
     {
+        image:"",
+        head1:"",
+        head2:""
+    },
+    {
         id:11,
         name:"Mahindra KUV 100",
         image:"https://zoomcar-assets.zoomcar.com/photographs/original/7ba5c42f243f8b813b8f1eea44432747c4d632d5.JPG?1623069010",
@@ -164,6 +179,7 @@ let data=[
         num:44,
         drive:"18km",
     },
+    
     {
         id:12,
         name:"Mahindra Scorpio",
@@ -223,6 +239,11 @@ let data=[
         fuel:"Diesel",
         num:44,
         drive:"18km",
+    },
+    {
+        image:"",
+        head1:"",
+        head2:""
     },
     {
         id:16,
@@ -306,7 +327,9 @@ let price=0;
 display(data);
 function display(data){
     document.querySelector("#box2").innerHTML=""
-    let res=data.forEach(function(el){
+    // let res=data.forEach(function(el){
+    for(let i=0;i<data.length;i++){
+        if(i%6!==0){
         let boxx=document.createElement("div");
         boxx.setAttribute("class","boxx")
         
@@ -315,23 +338,23 @@ function display(data){
         box21.setAttribute("class","box21");
         let imag=document.createElement("img");
         imag.setAttribute("class","imag")
-        imag.src=el.image;
+        imag.src=data[i].image;
         box21.append(imag);
 
         // box22
         let box22=document.createElement("div");
         box22.setAttribute("class","box22");
         let heading1=document.createElement("h3");
-        heading1.innerText=el.name;
+        heading1.innerText=data[i].name;
         heading1.setAttribute("class","heading1")
         let heading2=document.createElement("p");
-        heading2.innerText=`${el.trans}  · ${el.fuel}  · ${el.seat} Seats`;
+        heading2.innerText=`${data[i].trans}  · ${data[i].fuel}  · ${data[i].seat} Seats`;
         heading2.setAttribute("class","heading2")
         let image2=document.createElement("img");
         image2.setAttribute("class","image2")
-        image2.src=el.image1;
+        image2.src=data[i].image1;
         let heading3=document.createElement("p");
-        heading3.innerText=`${el.rating} (${el.num})  · ${el.drive} kms driven`;
+        heading3.innerText=`${data[i].rating} (${data[i].num})  · ${data[i].drive} kms driven`;
         heading3.setAttribute("class","heading3")
         box22.append(heading1,heading2,image2,heading3);
 
@@ -339,22 +362,36 @@ function display(data){
         let box23=document.createElement("div");
         box23.setAttribute("class","box23");
         let price=document.createElement("h3");
-        price.innerText=`₹${el.fare}`;
+        price.innerText=`₹${data[i].fare}`;
         price.setAttribute("class","price")
         let btn=document.createElement("button")
         btn.innerText="BOOK NOW";
         btn.setAttribute("class","btn")
-        let a=document.createElement("a");
-        a.href="https://www.google.com/";
         // a.innerText="BOOK NOW"
         btn.addEventListener("click",function(){
-            localStorage.setItem("cardetail", JSON.stringify(el));
+            localStorage.setItem("cardetail", JSON.stringify(data[i]));
+            window.location.href="../checkout/checkout page1.html"
         })
-        a.append(btn)
-        box23.append(price,a);
+        box23.append(price,btn);
         boxx.append(box21,box22,box23)
         document.querySelector("#box2").append(boxx);
-    })
+    }else{
+        let boxx=document.createElement("div");
+        boxx.setAttribute("class","boxx")
+
+        let box21=document.createElement("div");
+        box21.setAttribute("class","box21");
+        let imagg=document.createElement("img");
+        imagg.setAttribute("class","imagg")
+        imagg.src=data[0].image;
+        box21.append(imagg);
+        
+        boxx.append(box21)
+
+        document.querySelector("#box2").append(boxx);
+    }
+
+    }
     console.log("sum:",sum)
     console.log("price:",price)
 }
@@ -392,16 +429,60 @@ gdata=(data)=>{
 
 
 
-document.querySelector(".set").addEventListener("click",function(el){
-    let arr2=[];
-    if(arr2.length==0){
-        arr2.push(el);
+// document.querySelector(".set").addEventListener("click",function(el){
+//     let arr2=[];
+//     if(arr2.length==0){
+//         arr2.push(el);
+//     }
+//     else if(arr2.includes(el)){
+//         arr2.splice(el,1);
+//     }
+//     console.log(arr2)
+// })
+    
+    document.querySelector(".set").addEventListener("click",myfil)
+    function myfil(){
+        let ell=document.querySelectorAll(".set");
+        let see=[];
+    
+        for(let i=0;i<ell.length;i++){
+                // if(el[i].innerText===5 || el[i].innerText===6 || el[i].innerText===7){
+            see.push(ell[i].innerText)
+            // }
+
+        }
+        // console.log(see);
+        return see;
+        // dee(data)
     }
-    else if(arr2.includes(el)){
-        arr2.splice(el,1);
+    
+
+function dee(data){
+    myfil();
+    let seeds=[];
+    for(let i=0;i<see.length;i++){
+        data.forEach(function(el){
+            if(el.type===see[i] || el.seat===see[i] || el.trans===see[i] || el.del===see[i]){
+                seeds.push(el);
+            }
+        })
     }
-    console.log(arr2)
-})
+    display(seeds)
+}
+
+
+
+
+
+
+
+// for(let i=0;i<el.length;i++){
+//     console.log(el[i])
+
+// }
+// function seatdata(el){
+//     let arr3=[];
+// }
 
 
 
