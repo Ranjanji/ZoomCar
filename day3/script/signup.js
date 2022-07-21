@@ -25,7 +25,7 @@ let singup = () => {
       alert("Please enter a password");
     }
 
-    if (checkEmail(email)) {
+    if (checkNumber(number)) {
       userArr.push(obj);
       localStorage.setItem("userArr", JSON.stringify(userArr));
       alert("singup success!");
@@ -35,11 +35,11 @@ let singup = () => {
     }
   };
 
-  function checkEmail(email) {
+  function checkNumber(number) {
     let userArr = JSON.parse(localStorage.getItem("userArr")) || [];
 
     let filtered = userArr.filter(function (ele) {
-      return ele.email === email;
+      return ele.number === number;
     });
 
     if (filtered.length > 0) {

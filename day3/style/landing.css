@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
 html, body {
     overflow-x: hidden;
     height: 100%;
@@ -9,26 +9,14 @@ body {
     margin: 0;
     font-family: 'Varela Round', sans-serif;
 }
-.header {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    background-color:black;
-    position: fixed;
-    height: 60px!important;
-    overflow: hidden;
-    z-index: 10;
-    
-}
+
 .main {
     margin: 0 auto;
     display: block;
     height: 100%;
     margin-top: 60px;
 }
-.mainInner{
+/* .mainInner{
     display: table;
     height: 100%;
     width: 100%;
@@ -40,14 +28,14 @@ body {
     font-size: 3em;
     font-weight: bold;
     letter-spacing: 1.25px;
-}
+} */
 #sidebarMenu {
     height: 100%;
     position: fixed;
     left: 0;
-    width: 250px;
+    width: 380px;
     margin-top: 60px;
-    transform: translateX(-250px);
+    transform: translateX(-380px);
     transition: transform 250ms ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -62,7 +50,7 @@ body {
     list-style: none;
     color: black;
 
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 10px;
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
@@ -147,23 +135,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -9px;
 }
 
-.header{
-    display: flex;
-    color: white;
-    justify-content:space-between;
-    padding: 0 50px;
-    align-items: center;
-}
-.box2{
-    display: flex;
-padding-right: 120px;
 
-gap: 50px;
-}
-.box2>p{
-    font-weight:700;
-    font-size: 22px;
-}
+
 #user{
     background-color:black;
     color: white;

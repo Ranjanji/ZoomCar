@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/landing.css" />
     <link
       rel="stylesheet"
@@ -15,7 +16,8 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">
+      <!-- here  navbar is expotedfrom component -->
+      <!-- <div class="logo">
         <img
           src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png"
           alt=""
@@ -25,7 +27,7 @@
         <p>Become a Host</p>
         <p>ZMS</p>
         <p>Login/Signup</p>
-      </div>
+      </div> -->
     </div>
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
 
@@ -34,7 +36,7 @@
       <div class="spinner horizontal"></div>
       <div class="spinner diagonal part-2"></div>
     </label>
-    <!-- <div style="color: black">hello</div> -->
+ 
     <div id="sidebarMenu">
       <ul class="sidebarMenuInner">
         <li id="user">
@@ -59,8 +61,9 @@
           >
         </li>
         <li>
+          <!-- svg file copied from site  -->
           <a href="#" target=""
-            ><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            ><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">  
               <path
                 d="M12 .75C18.213.75 23.25 5.787 23.25 12S18.213 23.25 12 23.25.75 18.213.75 12 5.787.75 12 .75zm0 1.5c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm0 3.375a.75.75 0 0 1 .745.663l.005.087v1.5h1.313l.108.005c.535.051.96.477 1.011 1.012l.005.108-.006.146c-.03.337-.162.657-.38.917l-.098.107-4.455 4.455h4.565l.087.005a.75.75 0 0 1 0 1.49l-.088.005H12.75v1.5a.75.75 0 0 1-1.495.087l-.005-.087v-1.5H9.562l-.108-.005a1.125 1.125 0 0 1-1.011-1.012L8.438 15l.006-.146c.03-.337.162-.657.38-.917l.098-.107 4.455-4.455H9.562l-.087-.005a.75.75 0 0 1 0-1.49l.088-.005h1.687v-1.5a.75.75 0 0 1 .75-.75z"
                 fill="#383838"
@@ -162,7 +165,7 @@
           >
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/plavookac/" target="_blank"
+          <a href="https://www.linkedin.com/in/plavookac/" target=""
             ><i class="fas fa-sign-out-alt"></i>Logout</a
           >
         </li>
@@ -181,3 +184,4 @@
     </div>
   </body>
 </html>
+<script src="./script/landing.js" type="module"></script>
