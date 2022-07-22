@@ -70,10 +70,10 @@
 #del2{
     border-left: 1px solid rgb(184, 183, 183);
 }
-.set:hover{
-    background-color: rgb(14, 136, 14);
+/* .set:hover{
+    background-color: rgb(43, 159, 43);
     color: white;
-}
+} */
 #filter>h3{
     font-size: 18px;
     margin-left: 20px;
