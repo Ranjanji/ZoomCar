@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./location.css"/>
+    <script src="https://kit.fontawesome.com/1a4457afd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Location Page</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="component-address-picker">
+
+            <div class="field-address" >
+                <div class="green-icon"></div>
+            <input id="inputbox" type="text" autocomplete="off" placeholder="Select your Starting Point"/>
+            </div>
+
+            <div class="location">
+
+                <div class="currentLocation">
+                
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <button id="currentLoc">
+                        Current Location</button>
+
+                        <i class="fa-regular fa-map"></i>
+                    <button onclick="mapfunc()" id="maplocation"><a href="./maps.html">Select Location on Map</a></button>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="location-pick">
+
+            <div class="location-box">
+                <div class="headings" ><h3>RECENTLY SEARCHED LOCATIONS</h3></div>
+                <div class="locations-1">
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                        </span><button class="locBtn">Manzil,Ex Servicemen Colony</button>
+                </div>
+                <div class="locations">
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                        </span><button class="locBtn">No:96, Narayanappa Block</button>
+                </div>
+            </div>
+            <div class="location-box">
+                <div class="headings" ><h3>SUGGESTED PICKUP LOCATIONS</h3></div>
+                <div class="locations-1">
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                        </span><button class="locBtn">Bangalore International Airport</button>
+                </div>
+                <div class="locations">
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                        </span><button class="locBtn">Yelahanka Railway Station,Yel...</button>
+                </div>
+            </div>
+
+        </div>
+
+         <div id="confirm-btn">
+        <button id="primary-btn">CONFIRM PICKUP LOCATION</button>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="./location.js"></script>
