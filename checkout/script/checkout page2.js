@@ -20,18 +20,18 @@ let data=JSON.parse(localStorage.getItem("cardetail"))||{};
    
     document.querySelector("#petrol").innerText=data.fuel;
     }
-   
+    let package=+localStorage.getItem("damage_package")
     let one=document.querySelector("#one");
     one.innerText=`₹${data.fare}`;
 
     let two=document.querySelector("#two");
-    two.innerText=`₹${data.fare}`;
+    two.innerText=`₹${package}`;
 
     let three=document.querySelector("#three");
-    three.innerText=`₹${data.fare}`;
+    three.innerText=`₹${data.fare+package}`;
 
     let five=document.querySelector("#five");
-    five.innerText=`₹${data.fare}`;
+    five.innerText=`₹${data.fare+package}`;
 
  let btn=document.querySelector("#display_price>button");
- btn.innerText=`PROCEED TO PAY ₹${data.fare}`;
+ btn.innerText=`PROCEED TO PAY ₹${data.fare+package}`;
