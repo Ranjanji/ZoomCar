@@ -1,28 +1,11 @@
-window.addEventListener("scroll",()=>{
-    let nav=document.querySelector(".navbar");
-    let position=window.scrollY>0;
-    nav.classList.toggle("afterscroll", position);
-    let arrow=document.querySelector("#arrow");
-    arrow.src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-back-icon-png-image_4221994.jpg";
-    arrow.style.width="30px"
-    
-    if(position==0)
-    {
-     arrow.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VpEv_6Ei9xQ8pQ1TEg5TS5_sMFWYjmP-vrDOC1M3386sPWRHdrt5twPP3y3zSFMZqaM&usqp=CAU";
-     arrow.style.width="23px"
-    
-    }
- })
-
- let data=JSON.parse(localStorage.getItem("cardetail"))||{};
+let data=JSON.parse(localStorage.getItem("cardetail"))||{};
  console.log(data);
  let carName=document.querySelector("#name");
  carName.innerText=data.name;
- let price=document.querySelector("#price");
- price.innerText=`₹ ${data.fare}`;
+
  display(data)
    function display(data){
-    let box=document.querySelector("#div1");
+    
     let names=document.querySelector("#names");
     names.innerText=data.name;
     if(data.trans=="Manual"){
@@ -37,6 +20,18 @@ window.addEventListener("scroll",()=>{
    
     document.querySelector("#petrol").innerText=data.fuel;
     }
-    
+   
+    let one=document.querySelector("#one");
+    one.innerText=`₹${data.fare}`;
 
- 
+    let two=document.querySelector("#two");
+    two.innerText=`₹${data.fare}`;
+
+    let three=document.querySelector("#three");
+    three.innerText=`₹${data.fare}`;
+
+    let five=document.querySelector("#five");
+    five.innerText=`₹${data.fare}`;
+
+ let btn=document.querySelector("#display_price>button");
+ btn.innerText=`PROCEED TO PAY ₹${data.fare}`;
