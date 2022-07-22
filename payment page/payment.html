@@ -8,7 +8,55 @@
     <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-    
+    <div class="navbar">
+        <a href="../checkout/checkout page2.html"><img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-back-icon-png-image_4221994.jpg" alt="" id="arrow"></a>
+        <div>
+          <div id="price"></div>
+          <div id="date"></div>
+        </div>
+    </div>
+    <div id="payop">
+        <div id="op1" class="op" onclick="openpopup()">
+            <div class="box1"><img src="https://zoomcar-assets.zoomcar.com/images/original/97f051d76793fffe5ab182ffa58b8eb47c5ba0cf.png?1584453494" alt=""></div>
+            <div class="box2">
+                <p>Credit / Debit / ATM Card</p>
+                <p>All major card providers are supported</p>
+            </div>
+        </div>
+        <div id="op2" class="op">
+            <div class="box1"><img src="https://zoomcar-assets.zoomcar.com/images/original/4dd051886e5403aafb9725b7d2ab42c80f9b1df6.png?1584453529" alt=""></div>
+            <div class="box2">
+                <p>Net Banking</p>
+                <p>All major banks are supported</p>
+            </div>
+        </div>
+        <div id="op3" class="op">
+            <div class="box1"><img src="https://zoomcar-assets.zoomcar.com/images/original/1317404625e385185d23ea43a0c34569d6432d09.png?1632130014" alt=""></div>
+            <div class="box2">
+                <p>Mobile Wallet</p>
+                <p>Paytm Wallet + Postpaid</p>
+            </div>
+        </div>
+        <div id="op4" class="op">
+            <div class="box1"><img src="https://zoomcar-assets.zoomcar.com/images/original/9fcb8335a89265849f23225858489f2a9ce8e121.png?1584453574" alt=""></div>
+            <div class="box2">
+                <p>UPI</p>
+                <p>Get ₹33 Instant Cashback on using any UPI payment</p>
+            </div>
+        </div>   
+    </div>
+    <div id="boxx1" class="modal">
+        <h6>Enter Card Details</h6>
+        <p>Amount:</p>
+        <img id="tick" src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png" alt="">
+        <input type="number" name="card" id="card" placeholder="Card Number">
+        <br>
+        <input type="number" id="expiry" placeholder="Expiry(MM/YY)">
+        <input type="number" id="cvv" placeholder="CVV">
+        <br>
+        <button onclick="myfunc()" id="proceed"></button>
+        <button onclick="closepopup()" id="close"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAEACAMAAAA0tEJxAAAAdVBMVEX///8AAAD39/fx8fEhISEYGBjq6urb29saGhoeHh7X19f8/Pz29vZkZGR2dnaNjY2ampq7u7vCwsLR0dGAgIAsLCxJSUltbW2Tk5OhoaGnp6eurq7KysqHh4c2NjZxcXFaWlo9PT1eXl4QEBBHR0dTU1MwMDDqxcCEAAAEF0lEQVR4nO2c6XbiMAyFa6ALLd33HbrM+z/ilGE4LFdNFCIpsc/9fieKbwi2NntvjxBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCMmOYaa2N5ikUzfbp2ngZnuDwX5K906271PaD5ExF5HSmYvts7npowAZg6P0jxsH2zcL0/4yBuP0n1dz269L02NnGSsRKZ0b2z5fmfaVMRilNR5MbT+smx45ytgUkdKFoe2LTdN+MoZbIlJ6NLP9uG165LX8HW8/KaUnI9NPaPrYyDRwiM96NjH8jIYPTQyLOMm4DBUhflSXrY0KItw+pwWCjKuWJl/Q5LXJWCu4xme+tDIoiGhncNentnl1wltp++OquLKUIYho/0dTIcjY9d/oMlsoMZsZ3RYgFUYyBBFWzoAKk8W2axGijIOGJg7QhJ13qQSc0KYyBBGWnr6SljKGeLtt1KXkAscxUd8siLAP5FU8wEA+tTImn3CvR1JFxTkMRZkSW+S0NvBJcKlAGap4eTt+/+HdfawV3MBwbk9qbzq5hbu8MqZKBBl1twgi/LLXSs5gSG81d7zBHdOAcdZwD4OaVV4/g+u/g0ZaCcq4q7j6q58i5pUTvYy7RpJDmarf73fDzy8UlPEhXvcB19VNBaHgO5YmT/z0/oSPtBL83nEhw2lAsUTGgjK2nYp3uGLUNxHSFLrp4OHy+BlUFG7EDIa57myjq9IgGokEXYtV4POKIsK6DJohuHnLCia68H0V8SMD44ZFLI1RYeOMSSBC+DPPawgReo9FiKHoY/ukTzhCWgDXCd96lwVDlJGfCDHTtIVz0c6GOhnuRTsbhAzsGgFFOxuqZGQjokpGSOXRit9khBXtbBDqRPmJkGVkJ6IMFUV8UbKIQqaorGQUseoV4YFUi8jEGyzCM68XkUGUNMHAG3PMfZdRRPagiEyOkBz8NavW29TgHopYJmrzSdMK2eZV0lxImfdTxqxChCRD3cATCYqoq8JEbAZrSH1hDzOd475VxDRFVlz+elbYK6JSjFX7qfK6HrUeYEuBvoPiK3SkFRTRzdKsQWqm/t1CwQm0aZfXNGSclVh03MkNPIHs0MTZv+5H9FUVC5lQFu+0ExVbClS+0QlGhB12BQuN5jt3aHfWZo6BqNrZFurJHckQoml94CMkfKz37qtomdkQMogd7CIRdmTnt6OniN1VRex089t1mN/WyW5lFLEb13SDd1fbu40323cjI+LEAPeamcPpDYZ/MyXCpJLfSRpOM2MRR7PEynD0GATf0ktG6MlLY7ciTRGnYAWeSOZ8sFoJp8MFndQXcOBgCacmLmU4nmAZdxBn9qeJ/sgo4WTXQk7ZJYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQuz4C3osKzA+KjQeAAAAAElFTkSuQmCC" alt=""></button>
+    </div>
 </body>
 </html>
 <script src="payment.js"></script>
