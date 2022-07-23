@@ -10,3 +10,9 @@ function success(position){
   console.log(`Longitude: ${crd.longitude}`);
   console.log(`More or less ${crd.accuracy} meters.`);
 }
+
+function searchLoc(){
+
+  let city = document.getElementById("inputbox").value;
+  console.log(city);
+}

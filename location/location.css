@@ -67,6 +67,10 @@ i{
     justify-content: space-around;
 }
 
+*:focus{
+    outline: none;
+}
+
 #inputbox{
     height: 24px;
     width: 80%;
