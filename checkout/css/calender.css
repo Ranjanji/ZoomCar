@@ -9,34 +9,36 @@
 .flex {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  
 }
 .container {
   width: 100%;
   height: 100vh;
-  background-color: rgb(33, 32, 32);
+  margin-left: 150px;
+  /* background-color: rgb(33, 32, 32); */
 }
 /* @learnwithshero  */
 
 .calendar {
-  width: 430px;
+  width: 500px;
   height: 500px;
   background-color: white;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.669),
-    -10px -10px 20px rgba(0, 0, 0, 0.436);
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.669),
+    -10px -10px 20px rgba(0, 0, 0, 0.436); */
 }
 
 .calendar .month {
   width: 100%;
   height: 20%;
   padding: 20px 30px;
-  background-color: #ff9a8b;
-  background-image: linear-gradient(
+  /* background-color: #ff9a8b; */
+  /* background-image: linear-gradient(
     90deg,
     #ff9a8b 0%,
     #ff6a88 55%,
     #ff99ac 100%
-  );
+  ); */
   justify-content: space-between !important;
   text-align: center;
 }
@@ -99,18 +101,48 @@
     color: rgba(0, 0, 0, 0.349);
 }
 .days .today {
-    background-color: #ff6a88;
+    background-color: rgb(16,163,16);
     cursor: pointer;
     color: white;
-    border-radius: 50%;
-  transition: 0.2s;
+   
+    transition: 0.2s;
 }
-.days .today:hover {
-  background-color: #f95c79;
-}
+/* .days .today:hover {
+  background-color: rgb(234,234,234);
+} */
 .days div:not(.today):hover{
     border-radius: 0;
-    border: 0.5px solid black;
-    background-color: rgba(0, 0, 0, 0.215);
+    background-color: rgb(234,234,234);
+    color: rgb(172,185,194);
     cursor: pointer;
+}
+
+
+
+#navbar{
+  display: flex;
+  padding: 50px 0px 50px 50px;
+ align-items: center;
+}
+#navbar>a>img{
+  width: 23px;
+background-color: white;
+margin-right: 10px;
+
+
+}
+#navbar>a+div{
+  font-family: "IBM Plex Sans";
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family:"Segoe UI", Helvetica, Arial, sans-serif
+}
+#display{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 400px;
+  height: 60px;
+  margin-left: 100px;
 }

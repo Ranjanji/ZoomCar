@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calander</title>
-    <link rel="stylesheet" href="./css/calender.css">
+    <link rel="stylesheet" href="./checkout/css/calender.css">
 </head>
 <body>
+  <div id="navbar">
+    <a href="../product/product.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2VpEv_6Ei9xQ8pQ1TEg5TS5_sMFWYjmP-vrDOC1M3386sPWRHdrt5twPP3y3zSFMZqaM&usqp=CAU" alt="" id="arrow"></a>
+    <div>Choose Trip Dates</div>
+  </div>
+  <div id="display"></div>
+  <!-- ------------------------------calender------------------------- -->
     <div class="container flex">
         <div class="calendar">
             <div class="month flex    ">
-                <img class="prev"  src="./png/left arrow.png" alt="">
+                <img class="prev"  src="https://cdn-icons.flaticon.com/png/512/2722/premium/2722991.png?token=exp=1658568167~hmac=ec0aab242e7a5f38cb9a266c097f8f08" alt="">
                 <div class="content">
                   <h1>MAY</h1>
                   <p>Wed May 11th 2022</p>
                 </div>
-                <img class="next" src="./png/right arrow.png" alt="">
+                <img class="next" src="https://cdn-icons.flaticon.com/png/512/2989/premium/2989988.png?token=exp=1658568224~hmac=f2f5f6235de75c8e14af27d78f2126e8" alt="">
             </div>
             <div class="weekdays flex">
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thur</div>
-                <div>Fri</div>
-                <div>Sat</div>
-                <div>Sun</div>
+                <div>M</div>
+                <div>T</div>
+                <div>W</div>
+                <div>T</div>
+                <div>F</div>
+                <div>S</div>
+                <div>S</div>
             </div>
             <div class="days flex">
                 <div class="previous-days">26</div>
@@ -46,7 +52,9 @@
             </div>
         </div>
     </div>
-</body>
+
+
+  </body>
 </html>
 <script>
    const date = new Date();
