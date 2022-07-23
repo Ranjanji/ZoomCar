@@ -31,6 +31,12 @@ if(apply_coupon!=null)
     c.style.border="2px dashed rgb(16,163,16)";
     c.style.padding="3px 5px"
 }
+let startDate=localStorage.getItem("pickUpDate");
+document.querySelector("#startDate>div").innerText=startDate;
+let endDate=localStorage.getItem("dropDate");
+document.querySelector("#endDate>div").innerText=endDate;
+
+
 
  display(data)
    function display(data){

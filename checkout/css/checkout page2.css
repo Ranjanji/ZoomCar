@@ -124,6 +124,25 @@ gap: 20px;
     padding: 10px 15px;
     width: 85%;
 }
+#startDate{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px 20px 20px;
+}
+#startDate>img{
+    width: 20px;
+    /* background-color: #10a310; */
+}
+#endDate{
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+#endDate>img{
+    width: 20px;
+}
+
+
 
 /* display price------ */
 #display_price{

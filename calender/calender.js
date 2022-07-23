@@ -353,6 +353,7 @@ function getWeekNumber(date) {
     updateToggleText() {
       const date = this.date.format(this.format)
       this.toggleButton.textContent = date;
+      localStorage.setItem("dropDate",date);
     }
     
     updateMonthDays() {
@@ -379,6 +380,7 @@ function getWeekNumber(date) {
     }
     
     renderCalendarDays() {
+      
       this.updateHeaderText();
       this.updateMonthDays();
       this.calendarDateElement.focus();
@@ -416,7 +418,8 @@ function getWeekNumber(date) {
           margin-bottom:40px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
           font-size:22px;
-          outline:none; 
+          outline:none;
+          
         }
         
         .calendar-dropdown {

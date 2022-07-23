@@ -3,6 +3,11 @@ let data=JSON.parse(localStorage.getItem("cardetail"))||{};
  let carName=document.querySelector("#name");
  carName.innerText=data.name;
 
+ let startDate=localStorage.getItem("pickUpDate");
+document.querySelector("#startDate>div").innerText=startDate;
+let endDate=localStorage.getItem("dropDate");
+document.querySelector("#endDate>div").innerText=endDate;
+
  display(data)
    function display(data){
     
