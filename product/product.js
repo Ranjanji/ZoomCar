@@ -1,3 +1,16 @@
+import navbar from "../day5/component/navbar.js";
+console.log(navbar())
+document.getElementsByClassName("header").innerHTML=navbar();
+
+
+
+
+
+
+
+
+
+
 let data=[
     {
         image:"https://zoomcar-assets.zoomcar.com/photos/original/ffa01311aba57692bd5cbf4de83ea12bd9176985.jpg?1656062154",
@@ -518,6 +531,8 @@ function display(data){
         display(seeds);
     }
         
+    
+
     
     
 
