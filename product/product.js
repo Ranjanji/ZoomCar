@@ -1,4 +1,4 @@
-import navbar from "../day5/component/navbar.js";
+import navbar from "../login-signup/component/navbar.js";
 console.log(navbar())
 document.getElementsByClassName("header").innerHTML=navbar();
 
