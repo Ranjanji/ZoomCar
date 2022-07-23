@@ -3,7 +3,7 @@
     width: 100%;
  
     background-color:black;
-    position: fixed;
+    position:fixed;
     height: 70px!important;
     overflow: hidden;
     z-index: 10;
@@ -13,6 +13,10 @@
     padding: 0 50px;
     align-items: center;
     
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .box2{
@@ -25,6 +29,7 @@
 .box2>p{
     font-weight:bold;
     font-size: 18px;
+    cursor: pointer;
 }
 /* .far{
     width;

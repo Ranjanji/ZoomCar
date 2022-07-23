@@ -6,7 +6,7 @@ nav()
 
 let currUser = JSON.parse(localStorage.getItem('currUser'))
 if (currUser != null) {
-    document.getElementById("userName").innerHTML = `${currUser[0].name}<i class="far fa-lg (33% increase) fa-user-circle"></i>`
+    document.getElementById("userName").innerHTML = `<a href="./user.html">${currUser[0].name}<i class="far fa-lg (33% increase) fa-user-circle"></i></a>`
 
     document.getElementById("user").innerHTML = ` ${currUser[0].name}<span>${currUser[0].email}</span><span>${currUser[0].number}</span>`
 }
