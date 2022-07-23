@@ -22,9 +22,17 @@ function closepopup(){
     blur.classList.remove("open")
 }
 
-let image = document.createElement("img")
-    image.setAttribute("id", "imag");
-    
+
+            let image = document.createElement("img")
+            image.setAttribute("id", "imag");
+            image.src = "https://c.tenor.com/0AVbKGY_MxMAAAAC/check-mark-verified.gif";
+            let booked=document.createElement("div");
+            booked.setAttribute("id","booked")
+            let line=document.createElement("p");
+            line.innerText="Order Booked";
+            booked.append(image,line);
+            booked.addEventListener("click",myfun)
+            // booked.innerText="hello";
 
     function myfunc() {
         event.preventDefault();
@@ -36,7 +44,7 @@ let image = document.createElement("img")
             let pin1 = document.getElementById("expiry").value;
             let pin2 = document.getElementById("cvv").value;
             console.log(pin);
-            if (pin.length==12 && pin1<1299 && pin1.length==4 && pin2.length==3) {
+            if (pin.length==12 && pin1<1299 && pin1.length==4 && pin1>0722 && pin2.length==3) {
                 return true;
             }
             else {
@@ -63,10 +71,14 @@ let image = document.createElement("img")
 
         // document.querySelector("body").innerHTML = "";
         payment.then(function (resolve) {
+            document.querySelector("body").innerHTML=""
             console.log(resolve)
-            document.querySelector("#boxx1").append(image)
-            image.src = "https://c.tenor.com/0AVbKGY_MxMAAAAC/check-mark-verified.gif";
-            image.addEventListener("click",myfun)
+            
+            
+            
+            // image.addEventListener("click",myfun)
+            
+            document.querySelector("body").append(booked);
 
             // window.location.href="payment.html"
 

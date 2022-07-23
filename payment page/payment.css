@@ -164,10 +164,11 @@ a{
 
 #imag{
     display: block;
-    width: 120%;
-    height: 160%;
-    margin-top: -40px;
-    margin-left: -40px;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 50px;
+    
 }
 
 #close{
@@ -201,4 +202,24 @@ a{
     font-size: 15px;
     margin-top: 5px;
     color: grey;
+}
+
+
+
+#booked{
+    border: 1px solid transparent;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+#booked>p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
 }
