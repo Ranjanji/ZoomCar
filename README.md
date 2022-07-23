@@ -34,7 +34,7 @@ After selecting the location, the user is required to select the Start Date-End-
 ## Product Page
 __________________________________________________________________________
 
-[![F78xyL.png](https://i.im.ge/2022/07/24/F78xyL.png)](https://im.ge/i/F78xyL)
+[![F7Rq7T.png](https://i.im.ge/2022/07/24/F7Rq7T.png)](https://im.ge/i/F7Rq7T)
 
 In the above Product page, the User can choose a car of his choice. He can also search cars of his preference using the filters on the Left side of the Screen. We have used Sorting and filtering methods of JavaScript Higher Order Functions and the user clicks on Book Now option which redirects to the Summary page.
 
