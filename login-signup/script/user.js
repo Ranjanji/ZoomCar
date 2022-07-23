@@ -17,7 +17,7 @@ nav()
 
 // console.log(window.location.href)
 
-if(window.location.href == "http://127.0.0.1:5500/day5/user.html"){
+if(window.location.href == "http://127.0.0.1:5500/login-signup/user.html"){
     document.querySelector(".header").style.position = "static"
 }else{
     document.querySelector(".header").style.position = "fixed" 

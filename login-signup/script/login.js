@@ -10,7 +10,7 @@ let login = () => {
   if (validateLogin(number, password)) {
 
     alert("login successful!")
-    window.location.href = "./landing.html"
+    window.location.href = "./index.html"
   } else {
     alert("login failed!")
   }
