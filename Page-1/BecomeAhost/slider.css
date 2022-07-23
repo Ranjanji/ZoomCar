@@ -1,0 +1,100 @@
+#tabs-container {
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 14%);
+    background-color: #fff;
+    width: 80%;
+    max-width: 900px;
+    position: relative;
+    bottom: -32px;
+}
+.tab-item.active {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: .24px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #10a310;
+}
+.tab-item {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: .24px;
+    color: #1f1f1f;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.main-description {
+    border: 1px solid red;
+    padding-top: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: .24px;
+    text-align: center;
+    color: #666;
+    max-width: 620px;
+    margin:  auto;
+}
+#sliding_images{
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+#sections{
+    margin-top: 30px;
+   padding-top: 30px;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 100px;
+}
+#sections div{
+    border: 1 px solid rgb(95, 17, 17);
+    display: block;
+
+}
+.secondary-sub-text {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #666;
+}
+.primary-title{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    /* line-height: 24px; */
+    letter-spacing: .24px;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding-bottom: 8px;
+}
