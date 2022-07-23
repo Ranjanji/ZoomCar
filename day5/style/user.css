@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Mali:ital,wght@1,200;1,500&family=Poppins:wght@100;200&display=swap');
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
