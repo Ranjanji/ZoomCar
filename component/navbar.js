@@ -8,8 +8,8 @@ let navbar =()=>{
   /></a>
   </div>
   <div class="box2">
-    <p>Become a Host</p>
-    <p>ZMS</p>
+  <p><a href="./Page-1/BecomeAhost/p1.html">Become a Host</a></p>
+  <p><a href="./Page-1/BecomeAhost/p2.html">ZMS</a></p>
     <p id=userName ><a href="./signup.html">Login/Signup</a> </p>
   </div>`
 

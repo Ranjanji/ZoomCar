@@ -1,11 +1,26 @@
-import navbar from "../login-signup/component/navbar.js";
-console.log(navbar())
-document.getElementsByClassName("header").innerHTML=navbar();
+// import navbar from "../login-signup/component/navbar.js";
+// console.log(navbar())
+// document.getElementsByClassName("header").innerHTML=navbar();
 
 
 
+let pickUpDate=localStorage.getItem("pickUpDate");
+let pickUpTime=localStorage.getItem("pickUpTime");
 
+let dropDate=localStorage.getItem("dropDate");
+let dropTime=localStorage.getItem("dropTime");
 
+if(pickUpDate !=undefined && pickUpTime !=undefined)
+{
+    document.querySelector("#head10").innerText=`${pickUpDate} ${pickUpTime}`;
+    document.querySelector("#head12").innerText=`${dropDate} ${dropTime}`;
+}
+
+let user=JSON.parse(localStorage.getItem("currUser"));
+if(user!=null)
+{
+    document.querySelector("#userName").innerText=user[0].name;
+}
 
 
 

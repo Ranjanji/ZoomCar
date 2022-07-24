@@ -8,6 +8,14 @@ document.querySelector("#startDate>div").innerText=startDate;
 let endDate=localStorage.getItem("dropDate");
 document.querySelector("#endDate>div").innerText=endDate;
 
+let pickUpDate=localStorage.getItem("pickUpDate");
+let pickUpTime=localStorage.getItem("pickUpTime");
+
+let dropDate=localStorage.getItem("dropDate");
+let dropTime=localStorage.getItem("dropTime");
+
+document.querySelector("#date2").innerText=`${pickUpDate} ${pickUpTime} ==> ${dropDate} ${dropTime}`;
+
  display(data)
    function display(data){
     
@@ -38,5 +46,5 @@ document.querySelector("#endDate>div").innerText=endDate;
     let five=document.querySelector("#five");
     five.innerText=`₹${data.fare+package}`;
 
- let btn=document.querySelector("#display_price>button");
+ let btn=document.querySelector("#display_price>a>button");
  btn.innerText=`PROCEED TO PAY ₹${data.fare+package}`;

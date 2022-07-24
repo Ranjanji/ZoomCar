@@ -33,8 +33,17 @@ if(apply_coupon!=null)
 }
 let startDate=localStorage.getItem("pickUpDate");
 document.querySelector("#startDate>div").innerText=startDate;
+
 let endDate=localStorage.getItem("dropDate");
 document.querySelector("#endDate>div").innerText=endDate;
+
+let pickUpDate=localStorage.getItem("pickUpDate");
+let pickUpTime=localStorage.getItem("pickUpTime");
+
+let dropDate=localStorage.getItem("dropDate");
+let dropTime=localStorage.getItem("dropTime");
+
+document.querySelector("#date2").innerText=`${pickUpDate}  ${pickUpTime} ==> ${dropDate} ${dropTime}`;
 
 
 

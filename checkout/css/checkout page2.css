@@ -33,6 +33,16 @@
     color: #fff;
 
 }
+
+#date2{
+    font-family: "IBM Plex Sans";
+    font-size: 12px;
+    font-weight: 500;
+    
+    letter-spacing: 0.24px;
+    color: #fff;
+}
+
 #main{
     display: grid;
     grid-template-columns: repeat(2,38%);
@@ -196,4 +206,7 @@ button{
     color: #fff;
     margin: 0 auto;
     margin-top: 20px;
+}
+a{
+    text-decoration: none;
 }

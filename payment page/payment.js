@@ -1,9 +1,15 @@
 let data=JSON.parse(localStorage.getItem("cardetail"))||{};
 
 let pay=document.getElementById("price")
-pay.innerText=`PAY INR ${data.fare}`
+pay.innerText=`PAY INR ₹${data.fare}`
 // console.log(data.fare)
+let pickUpDate=localStorage.getItem("pickUpDate");
+let pickUpTime=localStorage.getItem("pickUpTime");
 
+let dropDate=localStorage.getItem("dropDate");
+let dropTime=localStorage.getItem("dropTime");
+
+document.querySelector("#date2").innerText=`${pickUpDate} ${pickUpTime} ==> ${dropDate} ${dropTime}`;
 
 // let body=document.querySelector("body")
 function openpopup(){
@@ -101,7 +107,7 @@ function closepopup(){
     proceed.innerText=`PAY INR${data.fare}`
 
     function myfun(){
-        window.location.href="payment.html"
+        window.location.href="../index.html"
     }
 
 

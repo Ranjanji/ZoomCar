@@ -88,7 +88,7 @@ z-index: 10;
 width: 100%;
 background-image: linear-gradient(270deg,#000,#1f1f1f)!important;
 }
-#navbar2>img{
+#navbar2>a>img{
     height: 25px;
     margin-top: 5px;
 }

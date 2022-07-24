@@ -600,9 +600,11 @@ function getWeekNumber(date) {
     if(x.includes("PM"))
     {
       document.querySelector('.sliderVal').innerHTML = `${val} PM`;
+      localStorage.setItem("pickUpTime",`${val} PM`)
     }
     else{
       document.querySelector('.sliderVal').innerHTML = `${val} AM`;
+      localStorage.setItem("pickUpTime",`${val} PM`)
     }
     
     }
@@ -611,9 +613,11 @@ function getWeekNumber(date) {
       if(x.includes("PM"))
       {
         document.querySelector('.sliderVal1').innerHTML = `${val} PM`;
+        localStorage.setItem("dropTime",`${val} PM`)
       }
       else{
         document.querySelector('.sliderVal1').innerHTML = `${val} AM`;
+        localStorage.setItem("dropTime",`${val} PM`)
       }
       }
  
