@@ -61,7 +61,7 @@ On the payment page, the user can select a convenient payment option and complet
 #### Features of the Website:
 1. Login/Sign-Up Functionality
 2. Location Access using the Location function and Google Maps integration.
-3. ES6 features like Import/Export to produce clean code.
+3. ES6 features like Import/Export and Arrow Functions to produce clean code.
 4. Bootstrap Framework for the CSS Functionality and icons using Font Awesome and Google Material Fonts.
 
 
