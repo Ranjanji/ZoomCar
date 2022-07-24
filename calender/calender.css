@@ -78,5 +78,7 @@ body {
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-
+a{
+  text-decoration: none;
+}
   

@@ -55,6 +55,7 @@ div{
 .field-address input{
     margin-top: 15px;
     border: none;
+    
 }
 
 i{
@@ -70,6 +71,7 @@ i{
 #inputbox{
     height: 24px;
     width: 80%;
+    outline: none;
 }
 
 #location-pick{

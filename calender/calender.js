@@ -353,6 +353,7 @@ function getWeekNumber(date) {
     updateToggleText() {
       const date = this.date.format(this.format)
       this.toggleButton.textContent = date;
+      localStorage.setItem("dropDate",date);
     }
     
     updateMonthDays() {
@@ -379,6 +380,7 @@ function getWeekNumber(date) {
     }
     
     renderCalendarDays() {
+      
       this.updateHeaderText();
       this.updateMonthDays();
       this.calendarDateElement.focus();
@@ -416,7 +418,8 @@ function getWeekNumber(date) {
           margin-bottom:40px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
           font-size:22px;
-          outline:none; 
+          outline:none;
+          
         }
         
         .calendar-dropdown {
@@ -597,9 +600,11 @@ function getWeekNumber(date) {
     if(x.includes("PM"))
     {
       document.querySelector('.sliderVal').innerHTML = `${val} PM`;
+      localStorage.setItem("pickUpTime",`${val} PM`)
     }
     else{
       document.querySelector('.sliderVal').innerHTML = `${val} AM`;
+      localStorage.setItem("pickUpTime",`${val} PM`)
     }
     
     }
@@ -608,9 +613,11 @@ function getWeekNumber(date) {
       if(x.includes("PM"))
       {
         document.querySelector('.sliderVal1').innerHTML = `${val} PM`;
+        localStorage.setItem("dropTime",`${val} PM`)
       }
       else{
         document.querySelector('.sliderVal1').innerHTML = `${val} AM`;
+        localStorage.setItem("dropTime",`${val} PM`)
       }
       }
  

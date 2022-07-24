@@ -74,9 +74,10 @@ body {
     padding:15px
   
 }
-.input-section>input{
+.input-section>a>input{
     padding: 15px;
     border-radius:5px;
+    width: 470px;
 }
 .input-section>button{
     padding: 15px;
@@ -85,7 +86,17 @@ body {
     border-radius:5px;
 
 }
-
+.input-section>button>a{
+    color: black;
+    text-decoration: none;
+}
+.input-section>button:hover{
+    background-color: #1fba22;
+    color: white;
+}
+.input-section>button>a:hover{
+    color: white;
+}
 
 #installbtn{
     background-color:transparent;
