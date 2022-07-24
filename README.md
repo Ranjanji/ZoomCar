@@ -7,6 +7,8 @@ __________________________________________________________________________
 
 https://adorable-panda-700bdf.netlify.app/
 
+Please Use the index.html(Home page) present in repository.
+
 ************************************************************************
 
 ## Landing Page
