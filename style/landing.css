@@ -1,0 +1,374 @@
+/* @import url('https://fonts.googleapis.com/css?family=Varela+Round'); */
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* .main { */
+    /* margin: 0 auto;
+    display: block; */
+    /* height: 100%; */
+    /* margin-top: 60px; */
+    /* position: relative; */
+    /* opacity: 1 */
+/* } */
+.popup{
+  
+    margin: auto;
+    /* margin-top:200px; */
+    /* height: 100vh; */
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width :52%;
+    text-align: center;
+    padding:20px;
+    background-color:WHITE;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:5px; 
+}
+.open-popup{
+    visibility:hidden;
+}
+#yes{
+    border: none;
+    background-color:transparent;
+    font-weight:bold;
+    color:#70ad4d;
+    font-size: 18px;
+
+}
+#no{
+    border: none;
+    background-color:transparent;
+    font-weight:bold;
+    color:#4c91e2;
+    padding-right: 45px;
+    font-size: 18px;
+
+}
+.section{
+    width: 100%;
+
+}
+
+
+.section>.input>img{
+    width: 100%;
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 38%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: -150px;
+    /* border-top: 1px solid black; */
+    padding:15px
+  
+}
+.input-section>a>input{
+    padding: 15px;
+    border-radius:5px;
+    width: 470px;
+}
+.input-section>button{
+    padding: 15px;
+    border: none;
+    background-color:#e0e0e0;
+    border-radius:5px;
+
+}
+.input-section>button>a{
+    color: black;
+    text-decoration: none;
+}
+.input-section>button:hover{
+    background-color: #1fba22;
+    color: white;
+}
+.input-section>button>a:hover{
+    color: white;
+}
+
+#installbtn{
+    background-color:transparent;
+    border: none;
+    color: #1fba22;
+    text-transform: capitalize;
+    font-weight: bold;
+   
+    
+
+}
+#coupan-code{
+    color: grey;
+    border: 1px dashed black;
+}
+
+
+#sidebarMenu {
+    position: relative;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 380px;
+    margin-top: 60px;
+    transform: translateX(-380px);
+    transition: transform 250ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* opacity: 0.7; */
+
+    background-color: white;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: black;
+
+    /* font-weight: bold; */
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: grey;
+    text-transform: lowercase;
+}
+.sidebarMenuInner li a{
+    color:black;
+ 
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+
+
+#user{
+    background-color:black;
+    color: white;
+}
+#user>p>a{
+    color: white;
+}
+#user>p>a>i{
+    color: white;
+}
+svg{
+    padding:0 10px;
+}
+i{
+    padding:0 10px;
+    
+}
+
+
+#inner-box{
+    width: 100%;
+display: flex;
+justify-content: space-between;
+
+}
+#card1>#inner-box>div{
+    flex: 2;
+}
+#card1>#inner-box>div+div{
+    flex:1
+}
+#inner-box>div+div>img{
+    width:100%;
+    /* border: 1px solid grey; */
+}
+.card01>.container{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+#card1{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* padding:20px; */
+    border-radius:5px;
+}
+#text>p{
+    padding:15px
+}
+#text>p:first-child{
+    font-size:22px;
+    font-weight: bold;
+
+}
+#card1>#inner-box>#text>p+p{
+  margin-top: -40px 
+
+}
+#card2>#inner-box>#text>p+p{
+    margin-top: -20px 
+}
+#coupan{
+    border: 1px dashed grey;
+}
+
+#card2{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:20px;
+    border-radius:5px;
+}
+.refer{
+    display: flex;
+    gap: 10px;
+    border-top: rgba(128, 128, 128, 0.351) 1px solid;
+    font-size:18px;
+    font-weight:200;
+    padding-left: 10px
+}
+.install>p{
+font-size:22px;
+font-weight: bold;
+color: #2fb932;
+}
+.card02{
+    background-color:#f4f4f4;
+}
+.card02>.container{
+ 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.card02>.container>div>img{
+    width: 100%;
+}
+
+
+.card03>.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 15px;
+}
+.card03>.container>div>img{
+    width: 100%;
+}
+.card03>h3{
+    padding-left: 5%;
+}
+
+
+
+.card04{
+    background-color: #f5f5f5;
+    margin:50px 0;
+
+}
+#header{
+    /* width: 30%; */
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 8px 0 ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.section{
+    padding:8px 20px;
+    width: 98%;
+    margin: 0 auto;
+}
+.heading>p{
+ font-weight: bold;
+}
+.card05>.container>img{
+    width: 22%;
+}
+.card05>.container>p{
+    text-align: center;
+    color: rgba(132, 127, 127, 0.784);
+    padding: 10px;
+}
