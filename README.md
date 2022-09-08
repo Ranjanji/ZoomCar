@@ -4,7 +4,7 @@ Zoomcar is an Indian car-rental platform, headquartered in Bangalore. The compan
 __________________________________________________________________________
 
 ## Link:
-https://prayagp8.github.io/Project-zoom-car/index.html
+https://prayagp8.github.io/Project-zoom-car/
 
 Please Use the index.html(Home page) present in repository.
 
