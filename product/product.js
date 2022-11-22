@@ -50,7 +50,7 @@ let data=[
     {
         id:2,
         name:"Renault Triber",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/c5d25b436da0aeb9ca1c25c86d8e85a1e9115aaf.JPG?1623135458",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/95868cff18ee4c522b0f49553f3eb0c628540509.png?1663876134",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -65,7 +65,7 @@ let data=[
     {
         id:3,
         name:"Honda Mobilo",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/8078ff3213ea672fd0b9216f72aec3060a6fd93b.JPG?1623224760",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/a9da5e1244b4c6f13a062514fdd4d0f42d4570f6.png?1663873287",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -80,7 +80,7 @@ let data=[
     {
         id:4,
         name:"Maruti Swift",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/4f978e418417cef5f069be1c013ee75b34c294ce.png?1613648724",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/f1850c781ba0aeae715eaa922dc15b4dc3654a09.png?1663874619",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -130,7 +130,7 @@ let data=[
     {
         id:7,
         name:"Maruti Dezire",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/524fda673d85d7affc94f9c54ddb2ed1219d3a4d.JPG?1638612892",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/a49559a67ba1d5fd7e2ffea2f78f654691ee018e.png?1663874345",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -321,7 +321,7 @@ let data=[
     {
         id:19,
         name:"Hyundai Centro",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/d838660c8fd50d0f2e3ed28c2b0550cbe940c0e0.JPG?1628247230",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/7f4a674aa51af027c8f0017fe823fb34e5d90a05.png?1663873067",
         trans:"Automatic",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -336,7 +336,7 @@ let data=[
     {
         id:20,
         name:"Maruti S-Presso",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/dce0b978081bb3b70ae6301a14fc454fd78db2c6.JPG?1640579702",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/cfe33545035eaad871fe2b8271fceebe1fae21e4.png?1663874686",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
