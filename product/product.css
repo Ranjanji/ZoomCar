@@ -143,12 +143,13 @@ a{
     justify-content: space-between;
 }
 .box11{
-    width: 45%;
+    width: 50%;
     height: 80%;
     border: 1px solid rgb(34, 156, 34);
     display: flex;
     background-color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 #dot{
     margin: auto;
