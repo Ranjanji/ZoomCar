@@ -1,7 +1,11 @@
 // import navbar from "../login-signup/component/navbar.js";
 // console.log(navbar())
 // document.getElementsByClassName("header").innerHTML=navbar();
-
+document.getElementById("hello").addEventListener("click",hello)
+function hello(){
+    let a=10;
+    console.log(a);
+}
 
 
 let pickUpDate=localStorage.getItem("pickUpDate");
@@ -17,8 +21,7 @@ if(pickUpDate !=undefined && pickUpTime !=undefined)
 }
 
 let user=JSON.parse(localStorage.getItem("currUser"));
-if(user!=null)
-{
+if(user!=null){
     document.querySelector("#userName").innerText=user[0].name;
 }
 
@@ -27,11 +30,6 @@ if(user!=null)
 
 
 let data=[
-    {
-        image:"https://zoomcar-assets.zoomcar.com/photos/original/ffa01311aba57692bd5cbf4de83ea12bd9176985.jpg?1656062154",
-        head1:"A car for every need",
-        head2:"SUVs, Sedans, Hatchback, Luxury cars - we got it all!"
-    },
     {
         id:1,
         name:"Maruti Baleno",
@@ -108,11 +106,6 @@ let data=[
         drive:"26k",
     },
     {
-        image:"https://zoomcar-assets.zoomcar.com/photos/original/88e0fd3c66b5f376edd7db32cb0eda2b0341f892.jpg?1656062347",
-        head1:"Available in 30+ airports",
-        head2:"On time free delivery!"
-    },
-    {
         id:6,
         name:"MAhindra TUV 300",
         image:"https://zoomcar-assets.zoomcar.com/photographs/original/59fca001231ef0e5665ea4e6e6b2eb2dd3d920dd.png?1584525284",
@@ -186,11 +179,6 @@ let data=[
         fuel:"Petrol",
         num:45,
         drive:"19k",
-    },
-    {
-        image:"https://zoomcar-assets.zoomcar.com/photos/original/695a7814f73093f9530c80d12da72587b3ea4131.jpg?1657959963",
-        head1:"Use code : ALGETSETGOA",
-        head2:"Book a Zoomcar between 15-31 July & stand a chance to win a free trip to Goa for 2"
     },
     {
         id:11,
@@ -269,11 +257,6 @@ let data=[
         drive:"18km",
     },
     {
-        image:"https://zoomcar-assets.zoomcar.com/photos/original/851772d8a58b889c5a52899e6b63cb6305c9afe0.jpg?1656059279",
-        head1:"70 Lakh+ 5 star trips and counting",
-        head2:"Come, join the Zoomcar Community, the largest car sharing platform"
-    },
-    {
         id:16,
         name:"Hyundai Verna",
         image:"https://zoomcar-assets.zoomcar.com/photographs/original/8836d3a8c6439eadfa611da45288a906d9d0c09d.JPG?1634794319",
@@ -348,12 +331,11 @@ let data=[
         num:25,
         drive:"19k",
     },
-    {
-        image:"https://zoomcar-assets.zoomcar.com/photos/original/851772d8a58b889c5a52899e6b63cb6305c9afe0.jpg?1656059279",
-        head1:"We trust you",
-        head2:"No security deposit for you!",
-    }
 ]
+
+
+
+
 // console.log(data)
 let sum=0;
 let price=0;
@@ -514,37 +496,97 @@ function display(data){
     parent.addEventListener("click",myfunc);
 
     var array=[];
+    let seat=[];
+    let type=[];
     function myfunc(e){
         if(!array.includes(e.target.innerText)){
             // var clicked=e.target.innerText;
             e.target.style.backgroundColor="green";
             e.target.style.color="white";
+            if((e.target.innerText==="5" || "6" || "7") && !seat.includes(e.target.innerText)){
+                seat.push(e.target.innerText)
+                // console.log(type)
+            } 
+            if((e.target.innerText==="Sedan" || "hatchback" || "SUV") && !type.includes(e.target.innerText)){
+                type.push(e.target.innerText)
+
+            }
             array.push(e.target.innerText)
             // alert("Hello"+clicked);
         }
         else if(array.includes(e.target.innerText)){
             e.target.style.backgroundColor="whitesmoke";
             e.target.style.color="black";
+            if(seat.includes(e.target.innerText)){
+                seat.splice(seat.indexOf(e.target.innerText),1)
+            }
+            if(type.includes(e.target.innerText)){
+                type.splice(type.indexOf(e.target.innerText),1)
+            }
+
             array.splice(array.indexOf(e.target.innerText),1)
-            console.log(e.target.innerText)
+            // console.log(e.target.innerText)
         }
-        console.log(array);
-         
+        console.log(seat)
+
+
+
+        // let copy1=data;
+        // copy1=copy1.filter(function(el){
+        //     if((el.seat.includes(seat[0]) || el.seat.includes(seat[1]) || el.seat.includes(seat[2])) && (el.type.includes(type[0]) || el.type.includes(type[1]) || el.type.includes(type[2]))){
+        //         return el;
+        //     }
+        // })
+        // display(copy1)
+
+
+        let copy=data;
+        copy=copy.filter(function(el){
+            // display(copy1)
+            // document.querySelector("#box2").innerHTML=""
+            if((el.seat.includes(seat[0]) || el.seat.includes(seat[1]) || el.seat.includes(seat[2])) ){
+                // console.log(el)
+                return el;
+            }
+            if((el.seat.includes(seat[0]) || el.seat.includes(seat[1]) || el.seat.includes(seat[2])) && (el.type.includes(type[0]) || el.type.includes(type[1]) || el.type.includes(type[2]))){
+                return el;
+                
+            }
+            if((el.type.includes(type[0]) || el.type.includes(type[1]) || el.type.includes(type[2]))){
+                // console.log(el)
+                return el;
+            }
+            if((el.type.includes(type[0]) || el.type.includes(type[1]) || el.type.includes(type[2])) && (el.seat.includes(seat[0]) || el.seat.includes(seat[1]) || el.seat.includes(seat[2]))){
+                // console.log(el)
+                return el;
+            }
+        })
+        // console.log(copy)
+        display(copy)
+
+        
+
+        
+
+    }
+
+
+
+    
+
+    
+
         // for(let i=0;i<array.length;i++){
-        let seeds=[];
-        for(let j=0;j<data.length;j++){
-            for(let i=0;i<array.length;i++){
-                if((data[j].type===array[i] || data[j].seat===array[i] || data[j].trans===array[i] || data[j].del===array[i]) && !seeds.includes(data[j])){
-                    seeds.push(data[j]);
-                }
+        // let seeds=[];
+        // for(let i=0;i<array.length;i++){
+        //     for(let j=0;j<data.length;j++){
+        //         if((data[j].type===array[i] || data[j].seat===array[i] || data[j].trans===array[i] || data[j].del===array[i]) && !seeds.includes(data[j])){
+        //             seeds.push(data[j]);
+        //         }
                 // else if(seeds.length%6===0){
                 //     seeds.push(data[seeds.length])
                 // }
-            }
-        }
-        display(array)
-        display(seeds);
-    }
+        
         
     
 

@@ -96,14 +96,12 @@
     height: 300px;
     margin-top: -5%; 
     margin-left: 33%;
-    /* transform: translate(-50%,-50%) ; */
     padding: 30px;
     padding-top: 30px;
     border: 1px solid;
     visibility: hidden;
     border: 1px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 .openup{
     visibility: visible;
@@ -111,7 +109,8 @@
 }
 
 #payop.open{
-    filter: blur(20px);
+    filter: blur(0px);
+
 }
 
 
@@ -149,8 +148,6 @@
     margin-left:50px;
     font-size: 15px;
     padding-left: 5px;
-
-    /* margin-top: 0px; */
 }
 #proceed{
     display: block;

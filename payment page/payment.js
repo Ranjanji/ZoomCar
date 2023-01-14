@@ -50,7 +50,7 @@ function closepopup(){
             let pin1 = document.getElementById("expiry").value;
             let pin2 = document.getElementById("cvv").value;
             console.log(pin);
-            if (pin.length==12 && pin1<1299 && pin1.length==4 && pin1>0722 && pin2.length==3) {
+            if (pin.length==12 && pin1<1299 && pin1.length==4 && pin2.length==3) {
                 return true;
             }
             else {
@@ -58,8 +58,7 @@ function closepopup(){
             }
         }
         
-        // image.src = "https://c.tenor.com/K2UGDd4acJUAAAAC/load-loading.gif";
-        // document.querySelector("#boxx1").append(image)
+        
 
         let payment = new Promise(function (resolve, reject) {
             let pin = bankserver();
