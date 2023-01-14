@@ -33,7 +33,7 @@ let data=[
     {
         id:1,
         name:"Maruti Baleno",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/d748d92c90c3b84a32f4115da1e5bd3f3f352937.jpg?1615958311",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/289ac94026c19af09c0dd6de322896ebd2a9b227.png?1663874188",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -48,7 +48,7 @@ let data=[
     {
         id:2,
         name:"Renault Triber",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/c5d25b436da0aeb9ca1c25c86d8e85a1e9115aaf.JPG?1623135458",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/95868cff18ee4c522b0f49553f3eb0c628540509.png?1663876134",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -63,7 +63,7 @@ let data=[
     {
         id:3,
         name:"Honda Mobilo",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/8078ff3213ea672fd0b9216f72aec3060a6fd93b.JPG?1623224760",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/a9da5e1244b4c6f13a062514fdd4d0f42d4570f6.png?1663873287",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -78,7 +78,7 @@ let data=[
     {
         id:4,
         name:"Maruti Swift",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/4f978e418417cef5f069be1c013ee75b34c294ce.png?1613648724",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/f1850c781ba0aeae715eaa922dc15b4dc3654a09.png?1663874619",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -93,7 +93,7 @@ let data=[
     {
         id:5,
         name:"Maruti Ignis",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/4424e7d205d37feda22e11b4465031a5b54cad5c.JPG?1622187205",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/49e306b0384497ca15414c0f4e13b58ab02a962f.png?1663874453",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -108,7 +108,7 @@ let data=[
     {
         id:6,
         name:"MAhindra TUV 300",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/59fca001231ef0e5665ea4e6e6b2eb2dd3d920dd.png?1584525284",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/c321761627c8fd556f2ae32348686f92c0eec849.png?1663876014",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -123,7 +123,7 @@ let data=[
     {
         id:7,
         name:"Maruti Dezire",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/524fda673d85d7affc94f9c54ddb2ed1219d3a4d.JPG?1638612892",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/a49559a67ba1d5fd7e2ffea2f78f654691ee018e.png?1663874345",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -138,7 +138,7 @@ let data=[
     {
         id:8,
         name:"Maruti Ciaz",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/0f9289bfae8401465ba95cca701e3732cc7b4022.JPG?1626670687",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/4591ed5749ed95845712e7f86a42f2575b5cc6a3.png?1663874318",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -153,7 +153,7 @@ let data=[
     {
         id:9,
         name:"Hyundai Creta",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/f3121bab5e720266c0ef441edfde8a915fd14d10.JPG?1622273072",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/aac05ee37980c8d94e9657bc8ddea29312b0e6ae.jpg?1620384508",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -168,7 +168,7 @@ let data=[
     {
         id:10,
         name:"Honda Amaze",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/c1c7c50920ee5554049b8e2811630a667f5eef2d.jpg?1619086336",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/42f650b8dee1baef441fef362e4a5efbd5b519a3.png?1663872410",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -183,7 +183,7 @@ let data=[
     {
         id:11,
         name:"Mahindra KUV 100",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/7ba5c42f243f8b813b8f1eea44432747c4d632d5.JPG?1623069010",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/ed9a65d8dc05ef4a910ce081fa6e6ce64e4b3114.png?1663872241",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"6",
@@ -199,7 +199,7 @@ let data=[
     {
         id:12,
         name:"Mahindra Scorpio",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/b220083c5126580866063dddfe3aa56c9b5295ad.png?1584526472",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/ed9a65d8dc05ef4a910ce081fa6e6ce64e4b3114.png?1663872241",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -214,7 +214,7 @@ let data=[
     {
         id:13,
         name:"Maruti Wagon R",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/57b1b1b9180a56fba0156135ea6dc8e9f058303d.jpg?1621260558",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/2733bd472b2c1cf2964cb9612854abbea8a9aeaa.png?1663874676",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -229,7 +229,7 @@ let data=[
     {
         id:14,
         name:"Tata Tiago",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/19eca74a7982804ba713dd9485861a7543422115.JPG?1638531037",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/199675b25d7039eb0713c43ba5f13f2cbd65cb85.png?1663876397",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -244,7 +244,7 @@ let data=[
     {
         id:15,
         name:"Maruti Brezza",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/6a75117e054e7d3bbe9ff6e431008679994c1d71.png?1584525114",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/a49559a67ba1d5fd7e2ffea2f78f654691ee018e.png?1663874345",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -259,7 +259,7 @@ let data=[
     {
         id:16,
         name:"Hyundai Verna",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/8836d3a8c6439eadfa611da45288a906d9d0c09d.JPG?1634794319",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/7da6a84a3997f5d39a80653d488dbf9412f5dd3b.png?1663873214",
         trans:"Automatic",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"7",
@@ -274,7 +274,7 @@ let data=[
     {
         id:17,
         name:"Ford Ecosport",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/c19577533e378dd35e83b9c23e50bfe2f103a7ea.JPG?1628245745",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/ed9a65d8dc05ef4a910ce081fa6e6ce64e4b3114.png?1663872241",
         trans:"Automatic",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"6",
@@ -289,7 +289,7 @@ let data=[
     {
         id:18,
         name:"Maruti Celerio",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/67ff26f4a0d5658901058b411ef69896b763d646.jpg?1640674355",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/289ac94026c19af09c0dd6de322896ebd2a9b227.png?1663874188",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -304,7 +304,7 @@ let data=[
     {
         id:19,
         name:"Hyundai Centro",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/d838660c8fd50d0f2e3ed28c2b0550cbe940c0e0.JPG?1628247230",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/7f4a674aa51af027c8f0017fe823fb34e5d90a05.png?1663873067",
         trans:"Automatic",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",
@@ -319,7 +319,7 @@ let data=[
     {
         id:20,
         name:"Maruti S-Presso",
-        image:"https://zoomcar-assets.zoomcar.com/photographs/original/dce0b978081bb3b70ae6301a14fc454fd78db2c6.JPG?1640579702",
+        image:"https://zoomcar-assets.zoomcar.com/photographs/original/4591ed5749ed95845712e7f86a42f2575b5cc6a3.png?1663874318",
         trans:"Manual",
         image1:"https://zoomcar-assets.zoomcar.com/images/original/b04593cd90f850d14ed46ed739b0371457ef6834.png?1633947533",
         seat:"5",

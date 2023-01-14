@@ -4,8 +4,7 @@ Zoomcar is an Indian car-rental platform, headquartered in Bangalore. The compan
 __________________________________________________________________________
 
 ## Link:
-
-https://adorable-panda-700bdf.netlify.app/
+https://guileless-stroopwafel-b37333.netlify.app/
 
 Please Use the index.html(Home page) present in repository.
 
