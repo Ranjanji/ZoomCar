@@ -101,7 +101,7 @@ function closepopup(){
     proceed.innerText=`PAY INR${data.fare}`
 
     function myfun(){
-        window.location.href="payment.html"
+        window.location.href="../login-signup/index.html"
     }
 
 
